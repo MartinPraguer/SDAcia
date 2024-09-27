@@ -15,6 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from viewer.models import ZnackyAut, TypKaroserie, Inzerat
+
+admin.site.register(ZnackyAut)
+admin.site.register(TypKaroserie)
+admin.site.register(Inzerat)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
