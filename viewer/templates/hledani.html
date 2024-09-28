@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>SDAcia - hledaní</h1>
+<ul>
+    {% for inzerat in inzeraty %}
+    <li>
+        <a href="">{{ inzerat.popis }} {{ inzerat.znacka }} - {{ inzerat.vykon }} {{ inzerat.rok_vyroby }}</a>
+    </li>
+    {% endfor %}
+</ul>
+<h3>Podrobnější vyhledávání</h3>
+
+{% endblock %}

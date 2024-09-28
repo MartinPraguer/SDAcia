@@ -14,7 +14,7 @@ class TypKaroserie(Model):
     def __str__(self):
         return self.karoserie
 
-class Inzerat(Model):
+class Inzeraty(Model):
     popis = CharField(max_length=128)
     znacka = ForeignKey(ZnackyAut, on_delete=DO_NOTHING)
     karoserie = ForeignKey(TypKaroserie, on_delete=DO_NOTHING)

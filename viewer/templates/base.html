@@ -20,6 +20,10 @@
 </head>
 
 <body>
+<form action="/hledani/" method="GET">
+    {% csrf_token %}
+    hledej:<input name="hledej">
+</form>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container fixed">
         <a class="navbar-brand" href="/">HollyMovies</a>
