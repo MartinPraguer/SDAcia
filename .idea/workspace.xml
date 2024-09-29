@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cae7cca-1de3-41e0-8096-527cebdb95d9" name="Changes" comment="START" />
+    <list default="true" id="8cae7cca-1de3-41e0-8096-527cebdb95d9" name="Changes" comment="všechno kromě úpravy a mazání je hotovo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hollymovies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hollymovies/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hollymovies/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hollymovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hollymovies/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -30,21 +39,82 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "Z:/SDA_pycharm/SDAcia",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;last_opened_file_path&quot;: &quot;Z:/SDA_pycharm/SDAcia -špatná složka&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\SDA_pycharm\SDAcia\viewer\templates\viewer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\SDA_pycharm\SDAcia\viewer\templates\viewer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.SDAcia -špatná složka">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SDAcia" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SDAcia -špatná složka" type="Python.DjangoServer" factoryName="Django server">
+      <module name="SDAcia -špatná složka" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,6 +134,9 @@
       <workItem from="1727330237895" duration="250000" />
       <workItem from="1727455161322" duration="1437000" />
       <workItem from="1727456730491" duration="126000" />
+      <workItem from="1727456867220" duration="37876000" />
+      <workItem from="1727608231771" duration="486000" />
+      <workItem from="1727608772189" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -81,7 +154,47 @@
       <option name="project" value="LOCAL" />
       <updated>1727456671594</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="START">
+      <option name="closed" value="true" />
+      <created>1727457395840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727457395840</updated>
+    </task>
+    <task id="LOCAL-00004" summary="models.py hotový">
+      <option name="closed" value="true" />
+      <created>1727467712610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727467712610</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rozpracovaná stránka index.html, stránka hledání, fungující models.py a nevím jak dodělat stránku hledání a stránku konkrétních inzerátů, počítadlo zobrazení">
+      <option name="closed" value="true" />
+      <created>1727525767414</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727525767414</updated>
+    </task>
+    <task id="LOCAL-00006" summary="všechno kromě úpravy a mazání je hotovo">
+      <option name="closed" value="true" />
+      <created>1727604576052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727604576052</updated>
+    </task>
+    <task id="LOCAL-00007" summary="všechno kromě úpravy a mazání je hotovo">
+      <option name="closed" value="true" />
+      <created>1727607580063</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727607580063</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +213,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="START" />
-    <option name="LAST_COMMIT_MESSAGE" value="START" />
+    <MESSAGE value="models.py hotový" />
+    <MESSAGE value="rozpracovaná stránka index.html, stránka hledání, fungující models.py a nevím jak dodělat stránku hledání a stránku konkrétních inzerátů, počítadlo zobrazení" />
+    <MESSAGE value="všechno kromě úpravy a mazání je hotovo" />
+    <option name="LAST_COMMIT_MESSAGE" value="všechno kromě úpravy a mazání je hotovo" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SDAcia$manage.coverage" NAME="manage Coverage Results" MODIFIED="1727527830316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
