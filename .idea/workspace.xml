@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8cae7cca-1de3-41e0-8096-527cebdb95d9" name="Changes" comment="všechno kromě úpravy a mazání je hotovo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hollymovies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hollymovies/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hollymovies/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hollymovies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hollymovies/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SDAcia/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;Z:/SDA_pycharm/SDAcia -špatná složka&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -137,6 +132,8 @@
       <workItem from="1727456867220" duration="37876000" />
       <workItem from="1727608231771" duration="486000" />
       <workItem from="1727608772189" duration="666000" />
+      <workItem from="1727622320486" duration="593000" />
+      <workItem from="1727623618976" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
