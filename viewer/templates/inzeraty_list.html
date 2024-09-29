@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Seznam inzerátů</h1>
+    <ul>
+        {% for inzerat in inzeraty %}
+            <li>
+                <a href="{% url 'inzeraty' pk=inzerat.pk %}">
+                    {{ inzerat.popis }} - {{ inzerat.znacka }} - {{ inzerat.rok_vyroby }}
+                </a>
+            </li>
+        {% empty %}
+            <li>Zatím žádné inzeráty.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

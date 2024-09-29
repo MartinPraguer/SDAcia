@@ -15,17 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from viewer.models import ZnackyAut, TypKaroserie, Inzeraty
-from viewer.views import index, hledani
+from viewer.models import ZnackyAut, TypKaroserie, Inzeraty, Komentare
+from viewer.views import index, hledani, inzeraty, podrobne_hledani, pridat_inzerat, inzeraty_list
 
 admin.site.register(ZnackyAut)
 admin.site.register(TypKaroserie)
 admin.site.register(Inzeraty)
-
+admin.site.register(Komentare)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", index, name="homepage"),
+    path("", index, name="index"),
     path("hledani/", hledani),
-
+    path('inzeraty/', inzeraty_list, name='inzeraty_list'),
+    path("inzeraty/<int:pk>/", inzeraty, name='inzeraty'),
+    path("podrobne_hledani/", podrobne_hledani, name="podrobne_hledani"),
+    path('pridat_inzerat/', pridat_inzerat, name='pridat_inzerat'),
 ]

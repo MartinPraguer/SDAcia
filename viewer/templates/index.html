@@ -1,29 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>SDAcia - hlavní stránka</h1>
-<h3>Nejnovější inzeráty</h3>
+<h1>SDacia - hlavní stránka</h1>
+
+<h3>Nejnovější inzeráty - TOP5</h3>
 <ul>
-    {% for inzerat in inzeraty %}
+{% for inzerat in inzeraty %}
     <li>
-        <a href="">{{ inzerat.popis }} {{ inzerat.znacka }} - {{ inzerat.vykon }} {{ inzerat.rok_vyroby }}</a>
+        <a href="{% url 'inzeraty' inzerat.pk %}">
+            {{ inzerat.popis }} - {{ inzerat.znacka }} - {{ inzerat.vykon }} - {{ inzerat.rok_vyroby }}
+        </a>
     </li>
-    {% endfor %}
+{% endfor %}
 </ul>
-<h3>Nejnavštěvovanější inzeráty</h3>
+
+<h3>Nejnavštěvovanější inzeráty - TOP5</h3>
 <ul>
-    {% for pocet_zobrazeno in pocet_zobrazeni %}
+{% for inzerat in pocet_zobrazeni %}
     <li>
-        <a href="">{{ pocet_zobrazeno.popis }} {{ pocet_zobrazeno.znacka }} - {{ pocet_zobrazeno.vykon }} {{ pocet_zobrazeno.rok_vyroby }}</a>
+        <a href="{% url 'inzeraty' inzerat.pk %}">
+            {{ inzerat.popis }} - {{ inzerat.znacka }} - {{ inzerat.vykon }} - {{ inzerat.rok_vyroby }}
+        </a>
     </li>
-    {% endfor %}
+{% endfor %}
 </ul>
-<h3>Nejnovější komentáře</h3>
-<ul>
-    {% for komentář in komentáře %}
-    <li>
-        {{ pocet_zobrazeno.popis }} {{ pocet_zobrazeno.znacka }} - {{ pocet_zobrazeno.vykon }} {{ pocet_zobrazeno.rok_vyroby }}
-    </li>
+
+
+    <h3>Nejnovější komentáře - TOP5</h3>
+    <ul>
+    {% for komentar in nove_komentare %}
+        <li>
+            <a href="{% url 'inzeraty' komentar.inzeraty.pk %}">{{ komentar.nick }}, {{ komentar.datum_komentare }} - {{ komentar.text }}</a>
+        </li>
     {% endfor %}
-</ul>
+    </ul>
 {% endblock %}
