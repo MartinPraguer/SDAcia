@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>SDacia - hlavní stránka!</h1>
+
+<h3>Nejnovější inzeráty - TOP5</h3>
+<ul>
+{% for inzerat in inzeraty %}
+    <li>
+        <a href="{% url 'inzeraty' inzerat.pk %}">
+            {{ inzerat.popis }} - {{ inzerat.znacka }} - {{ inzerat.vykon }} - {{ inzerat.rok_vyroby }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+<h3>Nejnavštěvovanější inzeráty - TOP5</h3>
+<ul>
+{% for inzerat in pocet_zobrazeni %}
+    <li>
+        <a href="{% url 'inzeraty' inzerat.pk %}">
+            {{ inzerat.popis }} - {{ inzerat.znacka }} - {{ inzerat.vykon }} - {{ inzerat.rok_vyroby }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+
+    <h3>Nejnovější komentáře - TOP5</h3>
+    <ul>
+    {% for komentar in nove_komentare %}
+        <li>
+            <a href="{% url 'inzeraty' komentar.inzeraty.pk %}">{{ komentar.nick }}, {{ komentar.datum_komentare }} - {{ komentar.text }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

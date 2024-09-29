@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Přidat nový inzerát</h1>
+
+    <form method="post" action="{% url 'pridat_inzerat' %}">
+        {% csrf_token %}
+
+        <label for="popis">Popis:</label>
+        <input type="text" id="popis" name="popis" required><br>
+
+        <label for="znacka">Značka:</label>
+        <select id="znacka" name="znacka" required>
+            {% for znacka in znacky %}
+                <option value="{{ znacka.id }}">{{ znacka.znacka }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="karoserie">Karoserie:</label>
+        <select id="karoserie" name="karoserie" required>
+            {% for k in karoserie %}
+                <option value="{{ k.id }}">{{ k.karoserie }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="vykon">Výkon:</label>
+        <input type="text" id="vykon" name="vykon" required><br>
+
+        <label for="rok_vyroby">Rok výroby:</label>
+        <input type="number" id="rok_vyroby" name="rok_vyroby" required><br>
+
+        <label for="cena">Cena:</label>
+        <input type="number" id="cena" name="cena" required><br>
+
+        <input type="submit" value="Přidat inzerát">
+    </form>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Počet zobrazení: {{ inzerat.pocet_zobrazeni }}</h1>
+    <p><strong>Popis:</strong> {{ inzerat.popis }}</p>
+    <p><strong>Rok výroby:</strong> {{ inzerat.rok_vyroby }}</p>
+    <p><strong>Cena:</strong> {{ inzerat.cena }} Kč</p>
+    <p><strong>Značka:</strong> {{ inzerat.znacka }}</p>
+    <p><strong>Typ karoserie:</strong> {{ inzerat.karoserie }}</p>
+    <p><strong>Výkon:</strong> {{ inzerat.vykon }}</p>
+    <p><strong>Datum přidání:</strong> {{ inzerat.datum_pridani }}</p>
+
+    <!-- Zobrazit komentáře -->
+    <h2>Komentáře</h2>
+    <ul>
+        {% for komentar in inzerat.komentare_set.all %}
+            <li><strong>{{ komentar.nick }}</strong>, {{ komentar.datum_komentare }} - {{ komentar.text }}</li>
+        {% empty %}
+            <li>Zatím žádné komentáře.</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Formulář pro nový komentář -->
+    <h3>Přidat komentář</h3>
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="nick">Nick:</label>
+            <input type="text" id="nick" name="nick" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="text">Text:</label>
+            <textarea id="text" name="text" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Přidat komentář</button>
+    </form>
+</div>
+{% endblock %}
