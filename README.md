@@ -1,4 +1,7 @@
+Projekt běží na stránce - https://sdacia-7661.rostiapp.cz/
+
 SDAcia
+
 přidání/úprava/mazání značek aut (nejprve přes /admin) - Mercedes, Audi, ...
 
 přidání/úprava/mazání typu karoserie (nejprve přes /admin) - Sedan, Combi
